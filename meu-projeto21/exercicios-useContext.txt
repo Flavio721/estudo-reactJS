@@ -1,0 +1,70 @@
+📝 Exercícios sobre useContext
+🔹 Nível 1 — Fundamentos
+
+Tema do Site
+
+Crie um contexto chamado ThemeContext que armazena "light" ou "dark".
+
+Faça dois componentes (Header e Footer) que mostrem o tema atual.
+
+Use useContext para acessar o valor do tema.
+
+Usuário Logado
+
+Crie um contexto UserContext com o valor inicial { nome: "Maria" }.
+
+No componente Header, exiba “Olá, Maria”.
+
+No componente Sidebar, exiba “Usuário logado: Maria”.
+
+🔹 Nível 2 — Alterando o valor do contexto
+
+Alternar Tema
+
+Expanda o exercício 1: adicione um botão em Header que alterne o tema entre "light" e "dark".
+
+O valor do contexto deve ser atualizado e refletido em todos os componentes.
+
+Login / Logout
+
+Crie um contexto AuthContext que guarda o usuário atual (null se não estiver logado).
+
+Se não houver usuário, mostre um botão "Login" que define o usuário como { nome: "João" }.
+
+Se já houver usuário, mostre "Logout" que volta o valor para null.
+
+O Header deve exibir "Bem-vindo, João" quando logado, ou "Bem-vindo, visitante" quando não logado.
+
+🔹 Nível 3 — Contexto com estados complexos
+
+Carrinho de Compras
+
+Crie um contexto CartContext que guarda uma lista de produtos no carrinho.
+
+Adicione funções addToCart(produto) e removeFromCart(produto).
+
+Em ProductList, cada produto deve ter um botão "Adicionar ao Carrinho".
+
+Em Cart, mostre a lista de produtos adicionados.
+
+Contador Global
+
+Crie um CounterContext que guarda um número inicial 0.
+
+Crie dois componentes (IncrementButton e DecrementButton) que alteram o valor do contador.
+
+Crie um componente CounterDisplay que mostra o valor atual do contador.
+
+O contador deve ser atualizado globalmente.
+
+🎯 Extra — Exercício Final
+
+Sistema de Notificações
+
+Crie um NotificationContext que guarda uma lista de mensagens.
+
+Adicione a função addNotification(msg).
+
+Crie um botão em App que dispara uma nova notificação (“Você recebeu uma nova mensagem!”).
+
+Mostre todas as notificações em um componente NotificationList.
